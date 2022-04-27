@@ -31,12 +31,14 @@ public class MobConfig {
 				try {
 					String mobName = "Ender_Dragon";
 					if(entityType != EntityType.ENDER_DRAGON){
+
 						Entity entity = world.spawnEntity(location, entityType);
 						LivingEntity livingEntity = (LivingEntity) entity;
 						mobName = livingEntity.getName();
+						//
 						livingEntity.remove();
 					}
-
+					FancyMobs.fancyMobs.getLogger().info(mobName);
 					mobConfig.set(mobName+".Type", mobName);
 					mobConfig.set(mobName+".Display", mobName);
 					Map<String, String> stats_Map = new ConcurrentHashMap<>();
@@ -51,7 +53,7 @@ public class MobConfig {
 					}
 					MobManager.mob_Stats_Map.put(mobName, stats_Map);
 
-				}catch (ClassCastException | IllegalArgumentException exception){
+				}catch (NullPointerException | ClassCastException | IllegalArgumentException exception){
 					//exception.printStackTrace();
 				}
 				File file = new File(FancyMobs.fancyMobs.getDataFolder(), "Mobs/DefaultMobs.yml");

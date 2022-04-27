@@ -99,7 +99,9 @@ public class MobListener implements Listener {
                 event.setDroppedExp(fancyMobDeathEvent.getDropExp());
                 //修改掉落物
                 Location location = mob.getLocation();
-                fancyMobDeathEvent.getDropItems().forEach(itemStack -> location.getWorld().dropItemNaturally(location, itemStack, item -> item.setThrower(mobUUID)));
+                fancyMobDeathEvent.getDropItems().forEach(itemStack -> {
+                    location.getWorld().dropItemNaturally(location, itemStack, item -> item.setThrower(mobUUID));
+                });
                 event.getDrops().clear();
                 //修改掉落金錢
                 Currency.giveMoney(killer, fancyMobDeathEvent.getMoney());

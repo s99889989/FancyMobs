@@ -1,0 +1,12 @@
+name: FancyMobs
+version: '${version}'
+main: com.daxton.fancymobs.FancyMobs
+api-version: 1.13
+prefix: FancyMobs
+softdepend: [ MythicMobs, ModelEngine, FancyCore ]
+authors: [ s99889989 ]
+description: mobs
+commands:
+  fancymobs:
+    description: Basic instructions.
+    aliases: fmobs

@@ -29,7 +29,6 @@ public class DependPlugins {
         }
         if (Bukkit.getServer().getPluginManager().getPlugin("ModelEngine") != null && Bukkit.getPluginManager().isPluginEnabled("ModelEngine")) {
             fancyMobs.getLogger().info(languageConfig.getString("LogMessage.LoadModelEngine"));
-            String test = "123456";
         }
         return true;
     }

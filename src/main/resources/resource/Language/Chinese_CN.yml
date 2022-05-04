@@ -1,0 +1,11 @@
+LogMessage:
+  Reload: '§a重新读取设定档。'
+  Disable: '§4FancyMobs 卸载。'
+  LoadFancyCore: '§aFancyCore 已加载。'
+  UnLoadFancyCore:
+    - '§4*** FancyCore未安装或未启用。***'
+    - '§4*** FancyMobs将被卸载。 ***'
+  LoadMythicMobs: '§aMythicMobs 已加载。'
+  LoadModelEngine: '§aModelEngine 已加载。'
+OpMessage:
+  Reload: '§e[FancyMobs] §a重新讀取設定檔。'

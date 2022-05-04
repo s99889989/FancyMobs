@@ -1,0 +1,11 @@
+LogMessage:
+  Reload: '§aRe-read the configuration file.'
+  Disable: '§4FancyMobs uninstall.'
+  LoadFancyCore: '§aLoaded FancyCore.'
+  UnLoadFancyCore:
+    - '§4*** FancyCore is not installed or not enabled. ***'
+    - '§4*** FancyMobs will be disabled. ***'
+  LoadMythicMobs: '§aLoaded MythicMobs.'
+  LoadModelEngine: '§aLoaded ModelEngine.'
+OpMessage:
+  Reload: '§e[FancyMobs] §aRe-read the configuration file.'

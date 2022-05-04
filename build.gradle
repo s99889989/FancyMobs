@@ -3,7 +3,7 @@ plugins {
 }
 
 group = 'com.daxton'
-version = '1.2.0'
+version = '1.2.2'
 
 repositories {
     mavenCentral()
@@ -59,8 +59,8 @@ compileJava.options.encoding = 'UTF-8'
 
 task copyJar(type: Copy) {
     from jar
-    //into 'C:/Users/Gary/Desktop/發布插件'
-    into 'C:/Users/Gary/Desktop/PluginServer/1.18.2/plugins'
+    into 'C:/Users/Gary/Desktop/發布插件'
+    //into 'C:/Users/Gary/Desktop/PluginServer/1.18.2/plugins'
 }
 
 build.finalizedBy copyJar

@@ -1,0 +1,11 @@
+LogMessage:
+  Reload: '§aLeia novamente o arquivo de configuração.'
+  Disable: '§4Desinstalação do FancyMobs.'
+  LoadFancyCore: '§aFancyCore carregado.'
+  UnLoadFancyCore:
+    - '§4*** FancyCore não está instalado ou não está habilitado. ***'
+    - '§4*** FancyMobs será desativado. ***'
+  LoadMythicMobs: '§aMythicMobs carregado.'
+  LoadModelEngine: '§aModelEngine carregado.'
+OpMessage:
+  Reload: '§e[FancyMobs] §aLeia novamente o arquivo de configuração.'

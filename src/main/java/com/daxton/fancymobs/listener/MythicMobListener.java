@@ -32,17 +32,8 @@ public class MythicMobListener implements Listener {
 		MobManager.fancy_Mob_Map.putIfAbsent(uuid, new FancyMob(activeMob));
 		FancyMob fancyMob = MobManager.fancy_Mob_Map.get(uuid);
 		if(fancyMob.isMythicMob()){
-			FancyMobs.fancyMobs.getLogger().info("0怪物等級: "+fancyMob.getActiveMob().getLevel());
-			FancyMobs.fancyMobs.getLogger().info("1怪物等級: "+fancyMob.getMythicLevel());
 			FancyMobSpawnEvent fancyMobSpawnEvent = new FancyMobSpawnEvent(fancyMob);
 			Bukkit.getPluginManager().callEvent(fancyMobSpawnEvent);
-			new BukkitRunnable() {
-				@Override
-				public void run() {
-					FancyMobs.fancyMobs.getLogger().info("2怪物等級: "+fancyMob.getActiveMob().getLevel());
-					FancyMobs.fancyMobs.getLogger().info("3怪物等級: "+fancyMob.getMythicLevel());
-				}
-			}.runTaskLater(FancyMobs.fancyMobs, 20);
 		}
 
 	}

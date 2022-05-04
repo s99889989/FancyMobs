@@ -32,7 +32,7 @@ public final class FancyMobs extends JavaPlugin {
         //開服執行任務
         Start.execute();
         //監聽
-       // Bukkit.getPluginManager().registerEvents(new MobListener(), fancyMobs);
+        Bukkit.getPluginManager().registerEvents(new MobListener(), fancyMobs);
 
 
     }
@@ -46,4 +46,9 @@ public final class FancyMobs extends JavaPlugin {
             fancyMobs.getLogger().info(languageConfig.getString("LogMessage.Disable"));
         }
     }
+
+    public static void sendLogger(String logger){
+        fancyMobs.getLogger().info(logger);
+    }
+
 }

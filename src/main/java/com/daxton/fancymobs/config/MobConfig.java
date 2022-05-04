@@ -38,7 +38,6 @@ public class MobConfig {
 						//
 						livingEntity.remove();
 					}
-					FancyMobs.fancyMobs.getLogger().info(mobName);
 					mobConfig.set(mobName+".Type", mobName);
 					mobConfig.set(mobName+".Display", mobName);
 					Map<String, String> stats_Map = new ConcurrentHashMap<>();

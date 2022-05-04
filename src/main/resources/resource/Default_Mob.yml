@@ -1,0 +1,26 @@
+Default_Mob:
+  Level: 1    
+  Race: '人形'
+  Attributes_Defense: '無'
+  Body: '小'
+  Type: '普通魔物'
+  #力量
+  Str: 1
+  #靈巧
+  Dex: 0
+  #敏捷
+  Agi: 0
+  #幸運
+  Luk: 0
+  #物理攻擊
+  Physical_Attack: 0
+  #物理防禦
+  Physical_Defense: 0
+  #魔法攻擊
+  Magic_Attack: 0
+  #魔法防禦
+  Magic_Defense: 0
+  #命中
+  Hit_Rate: 0
+  #閃避
+  Dodge_Rate: 0
